@@ -8,6 +8,41 @@ namespace ConsoleReadLineType
 {
     internal class ProverkaType
     {
+
+        public T Type<T>(string s) where T : struct, IConvertible
+        {
+            while (true)
+            {
+                Console.Write(s);
+                var input = Console.ReadLine();
+                if (ConvertType<T>(input.Replace(".", ","), out var result))
+                {
+                    return result;
+                }
+                else
+                {
+
+                }
+            }
+        }
+
+
+        private bool ConvertType<T>(string input, out T result) where T : struct, IConvertible
+        {
+            try
+            {
+                result = (T)Convert.ChangeType(input, typeof(T));
+                return true;
+            }
+            catch
+            {
+                result = default;
+                return false;
+            }
+        }
+
+
+        /*
         public decimal DecimalType(decimal i, string s)
         {
         start:
@@ -172,5 +207,6 @@ namespace ConsoleReadLineType
                 goto start;
             }
         }
+        */
     }
 }

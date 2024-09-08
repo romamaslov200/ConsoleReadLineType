@@ -24,19 +24,19 @@ namespace ConsoleReadLineType
 
         static void Main(string[] args)
         {
-            dm = proverkaType.DecimalType(dm, "Введите decimal => ");
-            dobl = proverkaType.DoubleType(dobl, "Введите double => ");
-            l = proverkaType.LongType(l, "Введите long => ");
-            ul = proverkaType.UlongType(ul, "Введите ulong => ");
-            i = proverkaType.IntType(i, "Введите int => ");
-            ui = proverkaType.UintType(ui, "Введите uint => ");
-            f = proverkaType.FloatType(f, "Введите float => ");
-            sh = proverkaType.ShortType(sh, "Введите short => ");
-            ush = proverkaType.UshortType(ush, "Введите ushort => ");
-            b = proverkaType.ByteType(b, "Введите byte => ");
-            sb = proverkaType.SbyteType(sb, "Введите sbyte => ");
+            dm = proverkaType.Type<decimal>("Введите decimal => ");
+            dobl = proverkaType.Type<double>("Введите double => ");
+            l = proverkaType.Type<long>("Введите long => ");
+            ul = proverkaType.Type<ulong>("Введите ulong => ");
+            i = proverkaType.Type<int>("Введите int => ");
+            ui = proverkaType.Type<uint>("Введите uint => ");
+            f = proverkaType.Type<float>("Введите float => ");
+            sh = proverkaType.Type<short>("Введите short => ");
+            ush = proverkaType.Type<ushort>("Введите ushort => ");
+            b = proverkaType.Type<byte>("Введите byte => ");
+            sb = proverkaType.Type<sbyte>("Введите sbyte => ");
 
-            Console.WriteLine($"\ndecimal = {dm}\ndouble = {dobl}\nlong = {l}\nulong = {ul}\nint = {i}\nuint = {ui}\nfloat = {f}\nshort = {sh}\nushort = {ush}\nbyte = {b}");
+            Console.WriteLine($"\ndecimal = {dm}\ndouble = {dobl}\nlong = {l}\nulong = {ul}\nint = {i}\nuint = {ui}\nfloat = {f}\nshort = {sh}\nushort = {ush}\nbyte = {b}\nsbyte = {sb}");
 
             Console.WriteLine($"\nint + float = {i + f}");
             Console.WriteLine($"double + float = {dobl + f}");
