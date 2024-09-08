@@ -38,7 +38,7 @@ namespace ConsoleReadLineType
 
             Console.WriteLine($"\ndecimal = {dm}\ndouble = {dobl}\nlong = {l}\nulong = {ul}\nint = {i}\nuint = {ui}\nfloat = {f}\nshort = {sh}\nushort = {ush}\nbyte = {b}");
 
-            Console.WriteLine($"\nint + float = {(float)i + f}");
+            Console.WriteLine($"\nint + float = {i + f}");
             Console.WriteLine($"double + float = {dobl + f}");
             Console.WriteLine($"int + long = {i + l}");
             Console.WriteLine($"byte + sbyte = {b + sb}");
