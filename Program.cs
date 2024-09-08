@@ -34,6 +34,7 @@ namespace ConsoleReadLineType
             sh = proverkaType.ShortType(sh, "Введите short => ");
             ush = proverkaType.UshortType(ush, "Введите ushort => ");
             b = proverkaType.ByteType(b, "Введите byte => ");
+            sb = proverkaType.SbyteType(sb, "Введите sbyte => ");
 
             Console.WriteLine($"\ndecimal = {dm}\ndouble = {dobl}\nlong = {l}\nulong = {ul}\nint = {i}\nuint = {ui}\nfloat = {f}\nshort = {sh}\nushort = {ush}\nbyte = {b}");
 
