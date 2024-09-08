@@ -36,7 +36,7 @@ namespace ConsoleReadLineType
             b = proverkaType.ByteType(b, "Введите byte => ");
 
             Console.WriteLine($"\ndecimal = {dm}\ndouble = {dobl}\nlong = {l}\nulong = {ul}\nint = {i}\nuint = {ui}\nfloat = {f}\nshort = {sh}\nushort = {ush}\nbyte = {b}");
-            
+
             
             Console.ReadKey();
         }
